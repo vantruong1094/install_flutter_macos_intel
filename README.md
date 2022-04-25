@@ -11,6 +11,16 @@
 ```
  brew tap leoafarias/fvm
  brew install fvm
+ 
+ $ pub global activate fvm
+
+下記を .bashrc や .zshrc に記述
+export PATH="$PATH":"$HOME/.pub-cache/bin"
+export PATH="$PATH":"$HOME/fvm/default/bin"
+
+$ fvm install 2.5.2
+$ fvm use 2.5.2 --global
+
 ```
 ##### [Read the FVM documentation](https://fvm.app/)
 
